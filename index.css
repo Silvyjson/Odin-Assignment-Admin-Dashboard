@@ -1,0 +1,223 @@
+:root {
+    --dark-blue: #2098d4;
+    --primary-color: #FFF;
+    --secondary-color: #F3F4F6;
+    --highlight-color: #ebc20d;
+    --border-color: rgb(193, 193, 193);
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    display: grid;
+    grid-template-columns: 0.5fr 2.1fr;
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.side-bar {
+    display: flex;
+    background-color: var(--dark-blue);
+    width: 300px;
+    color: var(--primary-color);
+    height: 100;
+    padding: 10px 30px;
+}
+
+.side-bar--content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.header-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8rem;
+}
+
+.header-icon i {
+    font-size: 2.3rem;
+}
+
+.side-bar_options span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+}
+
+.side-bar_options span i {
+    font-size: 1rem;
+}
+
+main {
+    height: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: var(--primary-color);
+    padding: 5px 30px;
+    gap: 20px;
+}
+
+.search_icon-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.search_icon-section div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gap {
+    display: flex;
+    gap: 30px !important;
+}
+
+.search_icon-section i {
+    font-size: 1.4rem;
+}
+
+input[type="search"] {
+    border: none;
+    outline: none;
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 20px;
+    height: 30px;
+    width: 600px;
+}
+
+.profile_name-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile_name-section div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile_name-section h4,
+.profile_name-section h3 {
+    margin: 0;
+}
+
+.profile_name-section button {
+    border: none;
+    outline: none;
+    background-color: var(--dark-blue);
+    padding: 10px;
+    border-radius: 15px;
+    height: 35px;
+    width: 100px;
+    color: var(--primary-color);
+}
+
+
+.main-section {
+    display: grid;
+    grid-template-columns: 1.5fr 0.55fr;
+    gap: 20px;
+    background-color: var(--secondary-color);
+    padding: 25px;
+    padding-bottom: 40px;
+}
+
+.main-section h2,
+.main-section p {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.main-section h1 {
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.projects-content div {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-left: 10px solid var(--highlight-color);
+    box-shadow: var(--shadow-lg);
+    border-radius: 8px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.share-icon {
+    display: flex;
+    gap: 19px;
+    align-self: flex-end;
+    font-size: 1.3rem;
+}
+
+.other-list {
+    display: grid;
+    grid-template-rows: 1fr 0.7fr;
+    gap: 15px;
+    font-size: 0.8rem !important;
+}
+
+.announcements-content {
+    display: grid;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    gap: 15px;
+}
+
+.border {
+    border: 1px solid var(--border-color);
+    height: 1px;
+}
+
+.trending {
+    display: grid;
+    background-color: var(--primary-color);
+    padding: 20px;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+.trending div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
