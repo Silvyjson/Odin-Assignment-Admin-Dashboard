@@ -161,7 +161,7 @@ input[type="search"] {
 }
 
 .main-section h1 {
-    margin: 5px;
+    margin: 10px 0;
     font-size: 1.2rem;
 }
 
@@ -195,7 +195,7 @@ input[type="search"] {
 .other-list {
     display: grid;
     grid-template-rows: 1fr 0.7fr;
-    gap: 15px;
+    gap: 10px;
     font-size: 0.8rem !important;
 }
 
