@@ -29,6 +29,10 @@ img {
     border-radius: 50%;
 }
 
+button{
+    cursor: pointer;
+}
+
 .side-bar {
     display: flex;
     background-color: var(--dark-blue);
